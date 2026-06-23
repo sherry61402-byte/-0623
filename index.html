@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>民祥幼兒園 2026 員工旅遊 | 釜山·慶州五日遊</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Nunito', 'Noto Sans TC', sans-serif;
+            background-color: #F8F9FA;
+            color: #333333;
+        }
+        .fuji-blue-bg { background-color: #3B7AAE; }
+        .fuji-blue-text { color: #3B7AAE; }
+        .fuji-blue-border { border-color: #3B7AAE; }
+        
+        html { scroll-behavior: smooth; }
+        .day-section { scroll-margin-top: 20px; }
+        
+        .solid-nav {
+            background-color: #FFFFFF;
+            box-shadow: 0 -4px 16px rgba(59, 122, 174, 0.08);
+        }
+    </style>
+</head>
+<body class="pb-28">
+
+    <!-- App 頂部 Header -->
+    <header class="fuji-blue-bg text-white rounded-b-[2.5rem] px-6 pt-8 pb-10 shadow-md text-center relative overflow-hidden">
+        <span class="bg-white/20 text-xs px-3 py-1 rounded-full font-bold tracking-widest uppercase mb-2 inline-block">
+            <i class="fa-solid fa-plane-departure mr-1"></i> Staff Travel 2026
+        </span>
+        <h1 class="text-2xl font-black tracking-tight mb-1">民祥幼兒園員工旅遊</h1>
+        <p class="text-sm text-blue-100 font-medium">✨ 釜山 × 慶州 浪漫五日雙城戀 ✨</p>
+        
+        <div class="mt-4 flex justify-center gap-4 text-xs bg-black/10 rounded-2xl py-2 px-4 inline-flex">
+            <div><i class="fa-regular fa-calendar mr-1"></i> 出發：08.01 (六)</div>
+            <div class="w-px bg-white/20"></div>
+            <div><i class="fa-solid fa-plane mr-1"></i> 台灣虎航 (IT606)</div>
+        </div>
+    </header>
+
+    <!-- 主體內容區 -->
+    <main class="max-w-md mx-auto px-4 mt-6 space-y-8">
+
+        <!-- ================= DAY 01 ================= -->
+        <section id="day1" class="day-section space-y-4">
+            <div class="flex items-center gap-2 px-2">
+                <span class="fuji-blue-bg text-white w-10 h-10 rounded-2xl flex items-center justify-center font-black text-lg shadow-sm">1</span>
+                <div>
+                    <h2 class="font-extrabold text-lg text-gray-800">第一天：啟程與百萬夜景</h2>
+                    <p class="text-xs text-gray-500">啟程桃園 ➔ 飛抵釜山金海</p>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- 桃園機場 -->
+                <div class="bg-white rounded-[2rem] p-5 shadow-sm border border-gray-100 space-y-3 relative" id="card-1">
+                    <div class="flex justify-between items-start">
+                        <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-blue-50 text-blue-600"><i class="fa-solid fa-bus mr-1"></i> 交通</span>
+                        <button onclick="openEditModal('card-1')" class="text-xs font-semibold px-3 py-1 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 transition-colors">
+                            <i class="fa-solid fa-pen-to-square mr-1"></i>編輯
+                        </button>
+                    </div>
+                    <h3 class="font-bold text-gray-800 text-base item-title">桃園國際機場 ➔ 釜山金海國際機場</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed item-desc">搭乘台灣虎航 IT606 (16:40-19:55) 飛往海港之都釜山，開啟五日夢幻假期。</p>
+                    <div class="bg-gray-50 rounded-xl p-3 text-xs space-y-1 text-gray-600">
+                        <div><strong class="fuji-blue-text">💡 拍照小技巧：</strong> <span class="item-tip">拿著精美登機證與轉接頭伴手禮，在候機室大片落地窗前與虎航飛機合影吧！</span></div>
+                    </div>
+                </div>
+
+                <!-- The Bay 101 -->
+                <div class="bg-white rounded-[2rem] p-5 shadow-sm border border-gray-100 space-y-3 relative" id="card-2">
+                    <div class="flex justify-between items-start">
+                        <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-600"><i class="fa-solid fa-camera mr-1"></i> 景點</span>
+                        <button onclick="openEditModal('card-2')" class="text-xs font-semibold px-3 py-1 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 transition-colors">
+                            <i class="fa-solid fa-pen-to-square mr-1"></i>編輯
+                        </button>
+                    </div>
+                    <h3 class="font-bold text-gray-800 text-base item-title">The Bay 101 釜山百萬夜景</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed item-desc">位於海雲臺的複合文化空間，水中倒映出對岸摩天大樓的魔幻燈火，是釜山最知名的夜景聖地。</p>
+                    <div class="bg-gray-50 rounded-xl p-3 text-xs space-y-1 text-gray-600">
+                        <div><strong class="fuji-blue-text">💡 拍照小技巧：</strong> <span class="item-tip">請導遊帶路前往空地停車場，用水灘玩「倒影拍攝法」，能拍出上下對稱、科技感十足的超夢幻天空之鏡魔幻大片！</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= DAY 02 ================= -->
+        <section id="day2" class="day-section space-y-4">
+            <div class="flex items-center gap-2 px-2">
+                <span class="fuji-blue-bg text-white w-10 h-10 rounded-2xl flex items-center justify-center font-black text-lg shadow-md">2</span>
+                <div>
+                    <h2 class="font-extrabold text-lg text-gray-800">第二天：古都慶州文化巡禮</h2>
+                    <p class="text-xs text-gray-500">世界遺產 ➔ 文青韓屋 ➔ 絕美夜景</p>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- 佛國寺 -->
+                <div class="bg-white rounded-[2rem] p-5 shadow-sm border border-gray-100 space-y-3 relative" id="card-3">
+                    <div class="flex justify-between items-start">
+                        <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-600"><i class="fa-solid fa-camera mr-1"></i> 景點</span>
+                        <button onclick="openEditModal('card-3')" class="text-xs font-semibold px-3 py-1 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 transition-colors">
+                            <i class="fa-solid fa-pen-to-square mr-1"></i>編輯
+                        </button>
+                    </div>
+                    <h3 class="font-bold text-gray-800 text-base item-title">世界文化遺產：佛國寺</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed item-desc">建於新羅時代，展現了精巧的石雕工藝與鮮明丹青塗飾。多寶塔與釋迦塔更是新羅文化的登峰造極之作。</p>
+                    <div class="bg-gray-50 rounded-xl p-3 text-xs space-y-1 text-gray-600">
+                        <div><strong class="fuji-blue-text">💡 拍照小技巧：</strong> <span class="item-tip">在「青雲橋、白雲橋」石階前，採用低角度仰拍，能將宏偉的木造大雄殿與藍天同時完美入鏡，極具歷史莊嚴感。</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 📱 底部固態導覽列 -->
+    <nav class="fixed bottom-4 left-4 right-4 max-w-md mx-auto solid-nav rounded-[2rem] px-2 py-2 z-40 border border-gray-200/60">
+        <div class="flex justify-around items-center">
+            <a href="#day1" class="flex flex-col items-center py-1 px-3 text-gray-400 hover:text-blue-600 transition duration-300">
+                <i class="fa-solid fa-1 text-sm mb-0.5"></i>
+                <span class="text-[10px] font-bold">啟程</span>
+            </a>
+            <a href="#day2" class="flex flex-col items-center py-1 px-3 text-gray-400 hover:text-blue-600 transition duration-300">
+                <i class="fa-solid fa-2 text-sm mb-0.5"></i>
+                <span class="text-[10px] font-bold">慶州</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- 🛠 編輯行程彈出視窗 (不透明高質感設計) -->
+    <div id="editModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 px-4">
+        <div class="bg-white w-full max-w-md rounded-[2.5rem] p-6 shadow-xl border border-gray-100 space-y-4">
+            <div class="flex justify-between items-center border-b border-gray-100 pb-3">
+                <h3 class="text-lg font-black text-gray-800"><i class="fa-solid fa-pen-to-square fuji-blue-text mr-2"></i>修改行程內容</h3>
+                <button onclick="closeEditModal()" class="text-gray-400 hover:text-gray-600"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            
+            <div class="space-y-3">
+                <div>
+                    <label class="block text-xs font-bold text-gray-500 mb-1">景點/行程名稱</label>
+                    <input type="text" id="modalInputTitle" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-blue-500 font-medium">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-gray-500 mb-1">行程簡介</label>
+                    <textarea id="modalInputDesc" rows="2" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-blue-500 font-medium"></textarea>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-gray-500 mb-1">💡 拍照小技巧</label>
+                    <textarea id="modalInputTip" rows="3" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-blue-500 font-medium"></textarea>
+                </div>
+            </div>
+
+            <div class="flex gap-3 pt-2">
+                <button onclick="closeEditModal()" class="flex-1 py-3 rounded-xl bg-gray-100 text-gray-600 font-bold text-sm hover:bg-gray-200 transition-colors">取消</button>
+                <button onclick="saveEdit()" class="flex-1 py-3 rounded-xl fuji-blue-bg text-white font-bold text-sm hover:opacity-90 transition-opacity shadow-sm">儲存更新</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript 功能腳本 -->
+    <script>
+        let currentCardId = null;
+
+        // 打開編輯視窗並帶入現有資料
+        function openEditModal(cardId) {
+            currentCardId = cardId;
+            const card = document.getElementById(cardId);
+            
+            const currentTitle = card.querySelector('.item-title').innerText;
+            const currentDesc = card.querySelector('.item-desc').innerText;
+            const currentTip = card.querySelector('.item-tip').innerText;
+
+            document.getElementById('modalInputTitle').value = currentTitle;
+            document.getElementById('modalInputDesc').value = currentDesc;
+            document.getElementById('modalInputTip').value = currentTip;
+
+            const modal = document.getElementById('editModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        // 關閉編輯視窗
+        function closeEditModal() {
+            const modal = document.getElementById('editModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+            currentCardId = null;
+        }
+
+        // 儲存更新後的資料回網頁卡片
+        function saveEdit() {
+            if (!currentCardId) return;
+            const card = document.getElementById(currentCardId);
+
+            card.querySelector('.item-title').innerText = document.getElementById('modalInputTitle').value;
+            card.querySelector('.item-desc').innerText = document.getElementById('modalInputDesc').value;
+            card.querySelector('.item-tip').innerText = document.getElementById('modalInputTip').value;
+
+            closeEditModal();
+        }
+
+        // 導覽列亮燈
+        const navLinks = document.querySelectorAll('.solid-nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.forEach(l => l.classList.remove('fuji-blue-text'));
+                link.classList.add('fuji-blue-text');
+            });
+        });
+        navLinks[0].classList.add('fuji-blue-text');
+    </script>
+</body>
+</html>
